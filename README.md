@@ -1,2 +1,2 @@
 # liuleigod.github.io
-zhangqun.icu
+www.zhangqun.icu
