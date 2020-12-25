@@ -23,7 +23,7 @@ window.onload=function(){
 	//下一首
 	bgm_btn_next.onclick=function(){
 		var bgm_gds=bgm.getAttribute('value');
-		if(bgm_gds<3){
+		if(bgm_gds<1){
 			bgm_gds++;
 		}else{
 			bgm_gds=1;
@@ -47,7 +47,7 @@ window.onload=function(){
 			localStorage.removeItem('bgm_time');
 			bgm.setAttribute('value',1);
 			bgm.innerHTML='<source src="bgm/1.mp3" type="audio/mpeg">';
-			bgm_text.innerHTML='当前播放第1首歌曲';
+			bgm_text.innerHTML='播放第1首歌曲';
 			bgm.load();
 			bgm.play();
 		},200);
