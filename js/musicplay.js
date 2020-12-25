@@ -17,7 +17,7 @@ window.onload=function(){
 		bgm_text.innerHTML='播放第'+localStorage.getItem('bgm_gds')+'首歌曲';
 	}else{
 		bgm.setAttribute('value',1);
-		bgm.innerHTML='<source src="bgm/1.mp3" type="audio/mpeg">';
+		bgm.innerHTML='<source src="http://music.163.com/song/media/outer/url?id=1381755293.mp3" type="audio/mpeg">';
 		bgm_text.innerHTML='播放第1首歌曲';
 	} 
 	//下一首
@@ -28,7 +28,7 @@ window.onload=function(){
 		}else{
 			bgm_gds=1;
 		}
-		bgm.innerHTML='<source src="bgm/'+bgm_gds+'.mp3" type="audio/mpeg">';
+		bgm.innerHTML='<source src="http://music.163.com/song/media/outer/url?id=1381755293.mp3" type="audio/mpeg">';
 		bgm_text.innerHTML='播放第'+bgm_gds+'首歌曲';
 		bgm.load();
 		bgm.play();
@@ -46,7 +46,7 @@ window.onload=function(){
 			localStorage.removeItem('bgm_gds');
 			localStorage.removeItem('bgm_time');
 			bgm.setAttribute('value',1);
-			bgm.innerHTML='<source src="bgm/1.mp3" type="audio/mpeg">';
+			bgm.innerHTML='<source src="http://music.163.com/song/media/outer/url?id=1381755293.mp3" type="audio/mpeg">';
 			bgm_text.innerHTML='播放第1首歌曲';
 			bgm.load();
 			bgm.play();
