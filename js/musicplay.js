@@ -18,7 +18,7 @@ window.onload=function(){
 	}else{
 		bgm.setAttribute('value',1);
 		bgm.innerHTML='<source src="bgm/1.mp3" type="audio/mpeg">';
-		bgm_text.innerHTML='当前播放第1首歌曲';
+		bgm_text.innerHTML='播放第1首歌曲';
 	} 
 	//下一首
 	bgm_btn_next.onclick=function(){
