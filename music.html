@@ -6,6 +6,11 @@
 	</head>
 	<body>
 		<!--添加音频播放，设置为自动播放,并隐藏播放控件的显示-->
-		 <audio src="music/qun.mp3" autoplay loop>
+		<audio controls="controls" autoplay="autoplay" controls="controls" hidden="hidden">
+			<source src="music/qun.mp3" type="audio/mp3">
+			<source src="music/qun.mp3" type="audio/ogg">
+			<embed height="50px" width="100px" src="music/qun.mp3">
+		</audio>
+
 	</body>
 </html>
